@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		45D98D092240FEBC0094923D /* CoreDataCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D98CFF2240FEBC0094923D /* CoreDataCodable.framework */; };
-		45D98D0E2240FEBC0094923D /* CoreDataCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D0D2240FEBC0094923D /* CoreDataCodableTests.swift */; };
+		45D98D0E2240FEBC0094923D /* DecodableManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */; };
 		45D98D102240FEBC0094923D /* CoreDataCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D98D022240FEBC0094923D /* CoreDataCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D192240FF0F0094923D /* DecodableManagedObject.swift */; };
+		45D98D1C2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */; };
+		45D98D202240FF8B0094923D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D1E2240FF8B0094923D /* Model.xcdatamodeld */; };
+		45D98D222240FF970094923D /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D212240FF970094923D /* PersistentContainer.swift */; };
+		45D98D24224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +32,13 @@
 		45D98D022240FEBC0094923D /* CoreDataCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataCodable.h; sourceTree = "<group>"; };
 		45D98D032240FEBC0094923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D98D082240FEBC0094923D /* CoreDataCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D98D0D2240FEBC0094923D /* CoreDataCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCodableTests.swift; sourceTree = "<group>"; };
+		45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableManagedObjectTests.swift; sourceTree = "<group>"; };
 		45D98D0F2240FEBC0094923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D98D192240FF0F0094923D /* DecodableManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableManagedObject.swift; sourceTree = "<group>"; };
+		45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContext.swift"; sourceTree = "<group>"; };
+		45D98D1F2240FF8B0094923D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		45D98D212240FF970094923D /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContextTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,9 @@
 		45D98D012240FEBC0094923D /* CoreDataCodable */ = {
 			isa = PBXGroup;
 			children = (
+				45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */,
 				45D98D022240FEBC0094923D /* CoreDataCodable.h */,
+				45D98D192240FF0F0094923D /* DecodableManagedObject.swift */,
 				45D98D032240FEBC0094923D /* Info.plist */,
 			);
 			path = CoreDataCodable;
@@ -80,10 +92,21 @@
 		45D98D0C2240FEBC0094923D /* CoreDataCodableTests */ = {
 			isa = PBXGroup;
 			children = (
-				45D98D0D2240FEBC0094923D /* CoreDataCodableTests.swift */,
+				45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */,
+				45D98D1D2240FF770094923D /* Core data */,
+				45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */,
 				45D98D0F2240FEBC0094923D /* Info.plist */,
 			);
 			path = CoreDataCodableTests;
+			sourceTree = "<group>";
+		};
+		45D98D1D2240FF770094923D /* Core data */ = {
+			isa = PBXGroup;
+			children = (
+				45D98D1E2240FF8B0094923D /* Model.xcdatamodeld */,
+				45D98D212240FF970094923D /* PersistentContainer.swift */,
+			);
+			path = "Core data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +171,7 @@
 				TargetAttributes = {
 					45D98CFE2240FEBC0094923D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					45D98D072240FEBC0094923D = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */,
+				45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */,
+				45D98D1C2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D98D0E2240FEBC0094923D /* CoreDataCodableTests.swift in Sources */,
+				45D98D0E2240FEBC0094923D /* DecodableManagedObjectTests.swift in Sources */,
+				45D98D202240FF8B0094923D /* Model.xcdatamodeld in Sources */,
+				45D98D222240FF970094923D /* PersistentContainer.swift in Sources */,
+				45D98D24224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +371,7 @@
 		45D98D142240FEBC0094923D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.CoreDataCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +398,7 @@
 		45D98D152240FEBC0094923D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +424,7 @@
 		45D98D172240FEBC0094923D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LP8E55TR28;
 				INFOPLIST_FILE = CoreDataCodableTests/Info.plist;
@@ -409,6 +443,7 @@
 		45D98D182240FEBC0094923D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LP8E55TR28;
 				INFOPLIST_FILE = CoreDataCodableTests/Info.plist;
@@ -455,6 +490,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45D98D1E2240FF8B0094923D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45D98D1F2240FF8B0094923D /* Model.xcdatamodel */,
+			);
+			currentVersion = 45D98D1F2240FF8B0094923D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45D98CF62240FEBC0094923D /* Project object */;
 }
