@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		45D98D092240FEBC0094923D /* CoreDataCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D98CFF2240FEBC0094923D /* CoreDataCodable.framework */; };
-		45D98D0E2240FEBC0094923D /* DecodableManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */; };
-		45D98D102240FEBC0094923D /* CoreDataCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D98D022240FEBC0094923D /* CoreDataCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D192240FF0F0094923D /* DecodableManagedObject.swift */; };
-		45D98D1C2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */; };
 		45D98D202240FF8B0094923D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D1E2240FF8B0094923D /* Model.xcdatamodeld */; };
 		45D98D222240FF970094923D /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D212240FF970094923D /* PersistentContainer.swift */; };
-		45D98D24224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */; };
+		45FE1BE72245175200CADDF2 /* CoreDataCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D98D022240FEBC0094923D /* CoreDataCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FE1BEE224517A800CADDF2 /* DecodableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BEA224517A700CADDF2 /* DecodableManagedObject.swift */; };
+		45FE1BEF224517A800CADDF2 /* FetchableManageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BEB224517A700CADDF2 /* FetchableManageObject.swift */; };
+		45FE1BF0224517A800CADDF2 /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BEC224517A700CADDF2 /* CodingUserInfoKey+ManagedObjectContext.swift */; };
+		45FE1BF1224517A800CADDF2 /* ManagedObjectUpsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BED224517A700CADDF2 /* ManagedObjectUpsert.swift */; };
+		45FE1BF6224517B800CADDF2 /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BF2224517B800CADDF2 /* CodingUserInfoKey+ManagedObjectContextTests.swift */; };
+		45FE1BF7224517B800CADDF2 /* DecodableManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BF3224517B800CADDF2 /* DecodableManagedObjectTests.swift */; };
+		45FE1BF8224517B800CADDF2 /* ManagedObjectUpsertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BF4224517B800CADDF2 /* ManagedObjectUpsertTests.swift */; };
+		45FE1BF9224517B800CADDF2 /* FetchableManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1BF5224517B800CADDF2 /* FetchableManagedObjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +36,17 @@
 		45D98D022240FEBC0094923D /* CoreDataCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataCodable.h; sourceTree = "<group>"; };
 		45D98D032240FEBC0094923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D98D082240FEBC0094923D /* CoreDataCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableManagedObjectTests.swift; sourceTree = "<group>"; };
 		45D98D0F2240FEBC0094923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45D98D192240FF0F0094923D /* DecodableManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableManagedObject.swift; sourceTree = "<group>"; };
-		45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContext.swift"; sourceTree = "<group>"; };
 		45D98D1F2240FF8B0094923D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		45D98D212240FF970094923D /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
-		45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContextTests.swift"; sourceTree = "<group>"; };
+		45FE1BEA224517A700CADDF2 /* DecodableManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableManagedObject.swift; sourceTree = "<group>"; };
+		45FE1BEB224517A700CADDF2 /* FetchableManageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchableManageObject.swift; sourceTree = "<group>"; };
+		45FE1BEC224517A700CADDF2 /* CodingUserInfoKey+ManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContext.swift"; sourceTree = "<group>"; };
+		45FE1BED224517A700CADDF2 /* ManagedObjectUpsert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectUpsert.swift; sourceTree = "<group>"; };
+		45FE1BF2224517B800CADDF2 /* CodingUserInfoKey+ManagedObjectContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+ManagedObjectContextTests.swift"; sourceTree = "<group>"; };
+		45FE1BF3224517B800CADDF2 /* DecodableManagedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableManagedObjectTests.swift; sourceTree = "<group>"; };
+		45FE1BF4224517B800CADDF2 /* ManagedObjectUpsertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectUpsertTests.swift; sourceTree = "<group>"; };
+		45FE1BF5224517B800CADDF2 /* FetchableManagedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchableManagedObjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +89,12 @@
 		45D98D012240FEBC0094923D /* CoreDataCodable */ = {
 			isa = PBXGroup;
 			children = (
-				45D98D1B2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift */,
+				45FE1BEC224517A700CADDF2 /* CodingUserInfoKey+ManagedObjectContext.swift */,
 				45D98D022240FEBC0094923D /* CoreDataCodable.h */,
-				45D98D192240FF0F0094923D /* DecodableManagedObject.swift */,
+				45FE1BEA224517A700CADDF2 /* DecodableManagedObject.swift */,
+				45FE1BEB224517A700CADDF2 /* FetchableManageObject.swift */,
 				45D98D032240FEBC0094923D /* Info.plist */,
+				45FE1BED224517A700CADDF2 /* ManagedObjectUpsert.swift */,
 			);
 			path = CoreDataCodable;
 			sourceTree = "<group>";
@@ -92,10 +102,12 @@
 		45D98D0C2240FEBC0094923D /* CoreDataCodableTests */ = {
 			isa = PBXGroup;
 			children = (
-				45D98D23224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift */,
+				45FE1BF2224517B800CADDF2 /* CodingUserInfoKey+ManagedObjectContextTests.swift */,
 				45D98D1D2240FF770094923D /* Core data */,
-				45D98D0D2240FEBC0094923D /* DecodableManagedObjectTests.swift */,
+				45FE1BF3224517B800CADDF2 /* DecodableManagedObjectTests.swift */,
+				45FE1BF5224517B800CADDF2 /* FetchableManagedObjectTests.swift */,
 				45D98D0F2240FEBC0094923D /* Info.plist */,
+				45FE1BF4224517B800CADDF2 /* ManagedObjectUpsertTests.swift */,
 			);
 			path = CoreDataCodableTests;
 			sourceTree = "<group>";
@@ -116,7 +128,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D98D102240FEBC0094923D /* CoreDataCodable.h in Headers */,
+				45FE1BE72245175200CADDF2 /* CoreDataCodable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */,
-				45D98D1A2240FF0F0094923D /* DecodableManagedObject.swift in Sources */,
-				45D98D1C2240FF4F0094923D /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */,
+				45FE1BEF224517A800CADDF2 /* FetchableManageObject.swift in Sources */,
+				45FE1BEE224517A800CADDF2 /* DecodableManagedObject.swift in Sources */,
+				45FE1BF0224517A800CADDF2 /* CodingUserInfoKey+ManagedObjectContext.swift in Sources */,
+				45FE1BF1224517A800CADDF2 /* ManagedObjectUpsert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D98D0E2240FEBC0094923D /* DecodableManagedObjectTests.swift in Sources */,
 				45D98D202240FF8B0094923D /* Model.xcdatamodeld in Sources */,
 				45D98D222240FF970094923D /* PersistentContainer.swift in Sources */,
-				45D98D24224103820094923D /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */,
+				45FE1BF8224517B800CADDF2 /* ManagedObjectUpsertTests.swift in Sources */,
+				45FE1BF7224517B800CADDF2 /* DecodableManagedObjectTests.swift in Sources */,
+				45FE1BF6224517B800CADDF2 /* CodingUserInfoKey+ManagedObjectContextTests.swift in Sources */,
+				45FE1BF9224517B800CADDF2 /* FetchableManagedObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
