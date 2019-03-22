@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45D98CFE2240FEBC0094923D"
                BuildableName = "CoreDataCodable.framework"
-               BlueprintName = "CoreDataCodable"
+               BlueprintName = "CoreDataCodable-iOS"
                ReferencedContainer = "container:CoreDataCodable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45D98D072240FEBC0094923D"
-               BuildableName = "CoreDataCodableTests.xctest"
-               BlueprintName = "CoreDataCodableTests"
+               BuildableName = "CoreDataCodable-iOSTests.xctest"
+               BlueprintName = "CoreDataCodable-iOSTests"
                ReferencedContainer = "container:CoreDataCodable.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45D98CFE2240FEBC0094923D"
             BuildableName = "CoreDataCodable.framework"
-            BlueprintName = "CoreDataCodable"
+            BlueprintName = "CoreDataCodable-iOS"
             ReferencedContainer = "container:CoreDataCodable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45D98CFE2240FEBC0094923D"
             BuildableName = "CoreDataCodable.framework"
-            BlueprintName = "CoreDataCodable"
+            BlueprintName = "CoreDataCodable-iOS"
             ReferencedContainer = "container:CoreDataCodable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,7 +85,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45D98CFE2240FEBC0094923D"
             BuildableName = "CoreDataCodable.framework"
-            BlueprintName = "CoreDataCodable"
+            BlueprintName = "CoreDataCodable-iOS"
             ReferencedContainer = "container:CoreDataCodable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
