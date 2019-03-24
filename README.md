@@ -1,19 +1,51 @@
 # CoreDataCodable
 
-[![codecov](https://codecov.io/gh/peterringset/CoreDataCodable/branch/develop/graph/badge.svg)](https://codecov.io/gh/peterringset/CoreDataCodable)
-[![Build Status](https://travis-ci.org/peterringset/CoreDataCodable.svg)](https://travis-ci.org/peterringset/CoreDataCodable)
+[![codecov](https://codecov.io/gh/peterringset/CoreDataCodable/branch/master/graph/badge.svg)](https://codecov.io/gh/peterringset/CoreDataCodable)
+[![Build Status](https://travis-ci.org/peterringset/CoreDataCodable.svg?branch=master)](https://travis-ci.org/peterringset/CoreDataCodable)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CoreDataCodable.svg)](https://img.shields.io/cocoapods/v/CoreDataCodable.svg)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Platform](https://img.shields.io/cocoapods/p/CoreDataCodable.svg?style=flat)
 
-Protocols and extensions for making core data play nice with Swift's `Codable` protocols
+CoreDataCodable contains protocols and extensions for making Core Data play nice with Swift's `Codable` protocols
 
 ## Requirements
 - iOS 10.0
 - macOS 10.12 (Sierra)
 - Swift 4.2
 
+## Installation
+
+### Cocoapods
+
+You want to add `pod 'CoreDataCodable', '~> 1.0'` similar to the following to your Podfile:
+
+```ruby
+target 'MyApp' do
+  pod 'CoreDataCodable', '~> 1.0'
+end
+```
+
+Then run `pod install` inside your terminal, or from CocoaPods.app.
+
+Alternatively to give it a test run, run the command:
+
+```bash
+$ pod try CoreDataCodable
+```
+
+### Carthage
+
+To integrate CoreDataCodable into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "peterringset/CoreDataCodable" ~> 1.0
+```
+
+Then run `carthage update` inside your terminal.
 
 ## Usage
 
-To make an `NSMangedObject`-subclass be parsable through `Decodable` you can declare conformance to `DecodableManagedObject`, and implement the protocol:
+To make an `NSManagedObject`-subclass be parsable through `Decodable` you can declare conformance to `DecodableManagedObject`, and implement the protocol:
 
 ![Managed object model: Employee](https://raw.githubusercontent.com/peterringset/CoreDataCodable/master/Images/managed-object-data-model.png)
 <!--![Managed object model class: Employee](https://raw.githubusercontent.com/peterringset/CoreDataCodable/master/managed-object-data-model.png)-->
@@ -57,7 +89,7 @@ This will insert the object into the provided context. Note that it is still up 
 
 ### Insert or update existing objects
 
-If you have an application where you will download entities that you already have in you local database, you can use `ManagedObjectUpsert` to help you manage that. This requires the entity class to conform to `FetchableManagedObject`, a protocol that tells us how to query the local database for an existing instance.
+If you have an application where you will download entities that you already have in a local database, you can use `ManagedObjectUpsert` to help you manage that. This requires the entity class to conform to `FetchableManagedObject`, a protocol that tells us how to query the local database for an existing instance.
 
 ```swift
 extension Employee {
@@ -92,14 +124,18 @@ public class Entity: NSManagedObject {
 
 }
 
-enum CodingKeys: String, CodingKey {
-    case name
-    case url
-}
+extension Entity {
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case url
+    }
 
-public func setValues(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: CodingKeys.self)
-    name = try container.decode(String.self, forKey: .name)
-    url = try container.decode(URL.self, forKey: .url)
+    public func setValues(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = try container.decode(String.self, forKey: .name)
+        url = try container.decode(URL.self, forKey: .url)
+    }
+
 }
-``` 
+```
