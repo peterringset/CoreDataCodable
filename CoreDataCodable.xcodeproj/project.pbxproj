@@ -260,15 +260,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Ringset;
 				TargetAttributes = {
 					45D98CFE2240FEBC0094923D = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					45D98D072240FEBC0094923D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					45FE1C002245317A00CADDF2 = {
 						CreatedOnToolsVersion = 10.1;
@@ -284,6 +285,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 45D98CF52240FEBC0094923D;
 			productRefGroup = 45D98D002240FEBC0094923D /* Products */;
@@ -540,7 +542,7 @@
 				PRODUCT_NAME = CoreDataCodable;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -566,7 +568,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.CoreDataCodable;
 				PRODUCT_NAME = CoreDataCodable;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -585,7 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.CoreDataCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -604,7 +606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = no.ringset.CoreDataCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -612,7 +614,7 @@
 		45FE1C132245317A00CADDF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -639,7 +641,7 @@
 		45FE1C142245317A00CADDF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
