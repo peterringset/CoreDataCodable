@@ -1,10 +1,10 @@
 language: objective-c
 
-osx_image: xcode10.1
+osx_image: xcode10.2
 env:
   matrix:
-    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XS'
-    - TEST_SDK=iphonesimulator12.1 OS=11.4 NAME='iPhone X'
+    - TEST_SDK=iphonesimulator12.2 OS=12.2 NAME='iPhone XS'
+    - TEST_SDK=iphonesimulator12.2 OS=11.4 NAME='iPhone X'
 
 before_install: rvm use $RVM_RUBY_VERSION
 
