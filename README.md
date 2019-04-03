@@ -9,9 +9,10 @@
 CoreDataCodable contains protocols and extensions for making Core Data play nice with Swift's `Codable` protocols
 
 ## Requirements
-- iOS 10.0
-- macOS 10.12 (Sierra)
-- Swift 4.2
+- iOS 10+
+- macOS 10.12+ (Sierra)
+- Swift 4+
+- Xcode 10.2
 
 ## Installation
 
@@ -50,12 +51,12 @@ To make an `NSManagedObject`-subclass be parsable through `Decodable` you can de
 ![Managed object model: Employee](https://raw.githubusercontent.com/peterringset/CoreDataCodable/master/Images/managed-object-data-model.png)
 <!--![Managed object model class: Employee](https://raw.githubusercontent.com/peterringset/CoreDataCodable/master/managed-object-data-model.png)-->
 
-```swift 
+```swift
 import CoreData
 import CoreDataCodable
 
 extension Employee: DecodableManagedObject {
-    
+
     public enum CodingKeys: String, CodingKey {
         case firstName
         case lastName
@@ -72,7 +73,7 @@ extension Employee: DecodableManagedObject {
         telephone = try container.decode(String.self, forKey: .telephone)
         imageURL = try container.decode(String.self, forKey: .imageURL)
     }
-    
+
 }
 ```
 
@@ -125,7 +126,7 @@ public class Entity: NSManagedObject {
 }
 
 extension Entity {
-    
+
     enum CodingKeys: String, CodingKey {
         case name
         case url
