@@ -12,7 +12,7 @@ import Foundation
 public protocol FetchableManagedObject {
     
     associatedtype FetchableCodingKeys: CodingKey
-    associatedtype Identifier: Decodable & CVarArg
+    associatedtype Identifier: Decodable
     static var identifierKey: FetchableCodingKeys { get }
     
 }
@@ -24,7 +24,7 @@ extension FetchableManagedObject where Self: NSManagedObject {
         let container = try decoder.container(keyedBy: FetchableCodingKeys.self)
         let identifier = try container.decode(Identifier.self, forKey: identifierKey)
         let request = NSFetchRequest<Self>(entityName: String(describing: Self.self))
-        request.predicate = NSPredicate(format: "\(identifierKey.stringValue) = %@", identifier)
+        request.predicate = NSPredicate(format: "%K == %@", argumentArray:[identifierKey.stringValue, identifier])
         return try context.fetch(request).first
     }
     
