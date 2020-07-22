@@ -23,9 +23,15 @@ class FetchableManagedObjectTests: XCTestCase {
         person1.name = "123"
         person1.address = "654"
         person1.postalCode = 987
+        
+        let person2 = Person(context: context)
+        person2.name = "234"
+        person2.address = "765"
+        person2.postalCode = 876
+        
         try! context.save()
         
-        XCTAssertEqual(try! context.count(for: countRequest), 1)
+        XCTAssertEqual(try! context.count(for: countRequest), 2)
 
         let json = """
         { "name": "123" }
@@ -33,9 +39,9 @@ class FetchableManagedObjectTests: XCTestCase {
         let decoder = JSONDecoder()
         decoder.userInfo[.managedObjectContext] = context
 
-        let person2 = try! decoder.decode(Wrapper.self, from: json).value
-        XCTAssertEqual(try! context.count(for: countRequest), 1)
-        XCTAssertEqual(person1.objectID, person2?.objectID)
+        let fetchedPerson = try! decoder.decode(Wrapper.self, from: json).value
+        XCTAssertEqual(try! context.count(for: countRequest), 2)
+        XCTAssertEqual(person1.objectID, fetchedPerson?.objectID)
     }
     
 }
