@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "CoreDataCodable"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "Make NSManagedObject and Core Data interoperate with Swift's Decodable"
 
   spec.description  = <<-DESC
