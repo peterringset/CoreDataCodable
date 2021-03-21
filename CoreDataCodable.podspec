@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.macos.deployment_target = "10.12"
 
   spec.source       = { :git => "https://github.com/peterringset/CoreDataCodable.git", :tag => "#{spec.version}" }
-  spec.source_files  = "CoreDataCodable/**/*.{h,m,swift}"
+  spec.source_files  = "Sources/CoreDataCodable/**/*.{h,m,swift}"
 
-  spec.public_header_files = "CoreDataCodable/**/*.h"
+  spec.public_header_files = "Sources/CoreDataCodable/**/*.h"
 end
