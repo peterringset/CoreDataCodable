@@ -15,9 +15,11 @@ let package = Package(
     targets: [
         .target(
             name: "CoreDataCodable",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Info.plist"]),
         .testTarget(
             name: "CoreDataCodableTests",
-            dependencies: ["CoreDataCodable"]),
+            dependencies: ["CoreDataCodable"],
+            exclude: ["Info.plist"]),
     ]
 )
